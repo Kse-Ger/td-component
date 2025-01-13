@@ -1,6 +1,8 @@
 import Link from "next/link";
 import CreateDropdown from "./create-dropdown";
 import CountryDropdown from "./countryDropdown";
+import Image from "next/image";
+import photo from "@/../public/photo.png";
 
 export default function Header() {
   return (
@@ -61,8 +63,18 @@ export default function Header() {
               Pricing
             </button>
           </Link>
+        </div>
 
-          <div className="w-8 h-8 rounded-full bg-gray-300 cursor-pointer"></div>
+        <div className="flex h-9">
+          <Image src={photo} alt="User photo" width={32} height={32} />
+          <div className="flex flex-col ml-3">
+            <p className="font-bold text-sm relative top-[2px]">
+              Nikita Ribakovs
+            </p>
+            <p className="font-normal text-gray-300 text-xs relative bottom-[2px]">
+              vID: #NR001
+            </p>
+          </div>
         </div>
       </div>
     </header>
