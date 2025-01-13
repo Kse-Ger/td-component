@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        tdRed: "var(--tournated-red)",
+        tdLightRed: "var(--tournated-lightRed)",
+        tdGrey: "var(----tournated-grey)",
       },
     },
   },
